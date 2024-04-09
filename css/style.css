@@ -1,3 +1,54 @@
+@media only screen and (max-width: 768px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  nav {
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  .contact-info,
+  .education,
+  .experience,
+  .skills {
+    margin-bottom: 0.5em;
+  }
+
+  .steam,
+  .sportsimg,
+  .cryptoimg,
+  .manonthemoon,
+  .avicii,
+  .abba {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  nav {
+    font-size: 1.3em;
+  }
+
+  .steam,
+  .sportsimg,
+  .cryptoimg,
+  .manonthemoon,
+  .avicii,
+  .abba {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+
 body {
   font-family: "Inria Sans", Arial, sans-serif;
   font-weight: 400;
