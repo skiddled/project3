@@ -2,7 +2,7 @@ const flickityElem = document.querySelector('.slider');
 
 if (flickityElem) {
   const flickity = new Flickity(flickityElem, {
-    cellAlign: 'center',
+    cellAlign: 'left',
     wrapAround: true,
   });
 }
