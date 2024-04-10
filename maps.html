@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="script.js"></script>
+    <style>
+      #map {
+        width: 50%;
+        height: 400px;
+        background-color: grey;
+      }
+    </style>
   </head>
   <body>
     <nav>
@@ -17,10 +24,18 @@
         <li><a href="maps.html">Maps</a></li>
       </ul>
     </nav>
-    <section id="map">
-      <h1>Find Me Here</h1>
-      <script async defersrc="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZh5TwV8LhOYEkSifJJYLGl2H12wZzS6w&callback=initMap">
-      </script>
-    </section>
+    <h1>Google Maps</h1>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        let iit = {lat: 41.8348831, lng: -87.627131};
+        let map = new google.maps.Map(
+          document.getElementById('map'), {zoom: 4, center: iit}
+        );
+        let marker = new google.maps.Marker({position: iit, map: map})
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZh5TwV8LhOYEkSifJJYLGl2H12wZzS6w&callback=initMap">
+    </script>
   </body>
 </html>
