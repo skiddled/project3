@@ -3,9 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Maps</title>
-    <!-- The callback parameter is required, so we use console.debug as a noop -->
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZh5TwV8LhOYEkSifJJYLGl2H12wZzS6w&callback=console.debug&libraries=maps,marker&v=beta">
-    </script>
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -20,8 +17,10 @@
         <li><a href="maps.html">Maps</a></li>
       </ul>
     </nav>
-    <gmp-map center="41.834739685058594,-87.62670135498047" zoom="14" map-id="DEMO_MAP_ID">
-      <gmp-advanced-marker position="41.834739685058594,-87.62670135498047" title="Illinois Institute of Technology"></gmp-advanced-marker>
-    </gmp-map>
+    <section id="map">
+      <h1>Find Me Here</h1>
+      <script async defersrc="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZh5TwV8LhOYEkSifJJYLGl2H12wZzS6w&callback=initMap">
+      </script>
+    </section>
   </body>
 </html>
