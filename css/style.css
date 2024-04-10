@@ -141,12 +141,12 @@ nav ul {
 }
 
 .manonthemoon {
-  display: block;
+  /*display: block;*/
   margin-left: 2em;
   margin-right: auto;
   width: 400px;
   height: 400px;
-  position: static;
+  /*position: static;*/
 }
 
 .avicii {
