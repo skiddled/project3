@@ -180,3 +180,7 @@ nav ul {
 .slider {
   width: 50%;
 }
+
+gmp-map {
+  height: 100%;
+}
